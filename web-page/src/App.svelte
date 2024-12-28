@@ -1,15 +1,19 @@
 <script lang="ts">
+  import CalendarView from "./lib/CalendarView.svelte"
   import NameDay from "./lib/NameDay.svelte"
 </script>
 
 <main>
- <NameDay/>
+ <CalendarView/>
 </main>
 
 <style>
   main {
     height:800px;
     width:480px;
+    background-color: white;
+    outline:black solid 10px;
+    padding:16px; 
   }
   .logo {
     height: 6em;

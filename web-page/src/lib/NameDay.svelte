@@ -17,7 +17,7 @@
   
 </script>
 
-<div>
+<div class="container">
   {#if namedayData}
   <h2>{namedayData}</h2>
 {:else}
