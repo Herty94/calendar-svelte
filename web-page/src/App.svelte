@@ -4,7 +4,8 @@
 </script>
 
 <main>
- <CalendarView/>
+  <div class="main_container">
+ <CalendarView/></div>
 </main>
 
 <style>
@@ -13,6 +14,8 @@
     width:480px;
     background-color: white;
     outline:black solid 10px;
+  }
+  .main_container {
     padding:16px; 
   }
   .logo {

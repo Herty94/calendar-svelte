@@ -19,7 +19,7 @@
 
 <div class="container">
   {#if namedayData}
-  <h2>{namedayData}</h2>
+  <h2>{namedayData.toUpperCase()}</h2>
 {:else}
   <p>Error</p>
 {/if}
