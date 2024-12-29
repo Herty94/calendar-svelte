@@ -1,11 +1,13 @@
 <script lang="ts">
   import CalendarView from "./lib/CalendarView.svelte"
   import NameDay from "./lib/NameDay.svelte"
+  import VerseOfDay from "./lib/VerseOfDay.svelte"
 </script>
 
 <main>
   <div class="main_container">
- <CalendarView/></div>
+ <CalendarView/> <VerseOfDay/>
+</div>
 </main>
 
 <style>
