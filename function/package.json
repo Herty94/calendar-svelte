@@ -5,10 +5,11 @@
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\"",
-    "postinstall":"npx playwright install chromium-headless-shell" 
+    "postinstall": "npx playwright install chromium-headless-shell"
   },
   "dependencies": {
     "@azure/functions": "^4.0.0",
+    "@glowstudent/youversion": "^2.1.0",
     "playwright": "^1.49.1",
     "playwright-chromium": "^1.49.1"
   },
