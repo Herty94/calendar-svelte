@@ -1,9 +1,27 @@
 <script lang="ts">
-  
+  import { onMount } from "svelte"
+  let verseOfDayImage:string
+  onMount(async()=>{
+    try{
+      const response = await fetch('https://calendar-af.azurewebsites.net/api/verseofday');
+      if (!response.ok) {
+        throw new Error('Failed to fetch nameday data');
+      }
+      const data = await response.json();
+      verseOfDayImage = data.images?.[0];
+    }catch(e){
+      console.log(e)
+    }
+  })
 </script>
 
 <div style="padding-top:12px">
-  <img width="100%" height="auto" src='https://www.bible.com/_next/image?url=https%3A%2F%2Fimageproxy.youversionapi.com%2F640x640%2Fhttps%3A%2F%2Fs3.amazonaws.com%2Fstatic-youversionapi-com%2Fimages%2Fbase%2F30733%2F1280x1280.jpg%20&w=640&q=75' alt="verse of the day"/>
+  {#if verseOfDayImage}
+  <img width="100%" height="auto" src={verseOfDayImage} alt="verse of the day"/>
+{:else}
+  <p>Error</p>
+{/if}
+  
 </div>
 
 <style>
