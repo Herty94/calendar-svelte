@@ -9,6 +9,6 @@
 
 <style>
   img {
-    filter: contrast(1.8)
+    filter: invert(100%)
   }
 </style>
