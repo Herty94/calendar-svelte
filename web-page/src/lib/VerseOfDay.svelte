@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte"
   let verseOfDayImage:string
+  let isLoading:boolean = true;
   onMount(async()=>{
     try{
       const response = await fetch('https://calendar-af.azurewebsites.net/api/verseofday');
@@ -12,13 +13,18 @@
     }catch(e){
       console.log(e)
     }
+   finally {
+      isLoading = false;
+    }
   })
 </script>
 
 <div style="padding-top:12px">
-  {#if verseOfDayImage}
+  {#if isLoading}
+    <p>Loading...</p>
+  {:else if verseOfDayImage}
   <img width="100%" height="auto" src={verseOfDayImage} alt="verse of the day"/>
-{:else}
+  {:else}
   <p>Error</p>
 {/if}
   
