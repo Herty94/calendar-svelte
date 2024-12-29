@@ -12,7 +12,7 @@
  </script>
 
  <div>
-  <h2>{monthName}</h2> 
+  <div class="horizontal"><h2>{monthName}</h2> <h2>{year}</h2> </div>
   <div class="line"></div>
   <div class="container">
     <h1>{monthDay}</h1>
