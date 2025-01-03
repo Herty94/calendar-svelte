@@ -34,7 +34,7 @@
 {#snippet data(verseOfDay:PassageData)}
 <div>
   <h3>{verseOfDay.passage}</h3>
-  <h4>{verseOfDay.citation}</h4>
+  <h3 class="citation">{verseOfDay.citation}</h3>
 </div>
 {/snippet}
 
@@ -51,9 +51,9 @@
 </div>
 
 <style>
-  h4 {
+  .citation {
     text-align: right;
-    color:gray;
+    color:rgb(98, 98, 98);
   }
   img {
     filter: invert(100%)
