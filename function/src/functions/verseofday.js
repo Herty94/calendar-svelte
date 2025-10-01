@@ -6,7 +6,7 @@ app.http('verseofday', {
   authLevel: 'anonymous',
   handler: async (request, context) => {
     try {
-      content = await YouVersion.getVerseOfTheDay('sk')
+      content = await YouVersion.getVerseOfTheDay()
       return { body: JSON.stringify(content) }
     } catch (error) {
       return { status: 500, body: error }
