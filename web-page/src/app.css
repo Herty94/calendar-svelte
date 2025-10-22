@@ -28,14 +28,18 @@ h6 {
 
 h1 {
   line-height: 1.1;
-  font-size: 8em;
+  font-size: 10em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
 }
 
 .card {
@@ -48,5 +52,5 @@ h3 {
 }
 
 .tomorrow {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.65);
 }

@@ -13,8 +13,8 @@
 
 <div>
   <div class="horizontal">
-    <h2>{monthName}</h2>
-    <h2>{year}</h2>
+    <h3>{monthName}</h3>
+    <h3>{year}</h3>
   </div>
   <div class="line"></div>
   <div class="container">
@@ -22,8 +22,8 @@
     <NameDay />
   </div>
   <div class="horizontal">
-    <h2>{monthDay}/{daysOfMonth}</h2>
-    <h2>{weekDay}</h2>
+    <h3>{monthDay}/{daysOfMonth}</h3>
+    <h3>{weekDay}</h3>
   </div>
   <div class="line"></div>
 </div>
